@@ -3,6 +3,7 @@
   --text-color: #757575;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --background-white-color: #f5f4fa;
 }
 body {
   background-color: var(--primary-white-color);
@@ -116,7 +117,7 @@ img {
 }
 
 .contact-item a {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -134,9 +135,40 @@ img {
   color: var(--accent-color);
 }
 
+.svg-contact {
+  margin-right: 10px;
+  fill: var(--text-color);
+}
+
+.svg-contact:hover {
+  fill: var(--accent-color);
+}
+
 /*Hero */
+
+.hero-box {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}
+
 .hero {
   text-align: center;
+}
+
+.hero-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img-16.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -234,6 +266,18 @@ img {
   margin-left: 30px;
 }
 
+.description-svg {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  text-align: center;
+  height: 120px;
+  width: 270px;
+  background-color: var(--background-white-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .example-item a {
   text-decoration: none;
 }
@@ -306,7 +350,7 @@ img {
 }
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-white-color);
 }
 
 .team-box {
