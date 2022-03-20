@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --background-white-color: #f5f4fa;
+  --gray-accent-color: #afb1b8;
 }
 body {
   background-color: var(--primary-white-color);
@@ -269,8 +270,7 @@ img {
 .description-svg {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
-  text-align: center;
+  align-items: center;
   height: 120px;
   width: 270px;
   background-color: var(--background-white-color);
@@ -280,6 +280,11 @@ img {
 
 .example-item a {
   text-decoration: none;
+}
+
+.example-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-title {
@@ -378,6 +383,80 @@ img {
 .team-text {
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.svg-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-list .social + .social {
+  margin-left: 10px;
+}
+
+.svg-item {
+  display: flex;
+  padding: 0;
+  color: var(--gray-accent-color);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  fill: currentColor;
+}
+
+.svg-item:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* Company link */
+
+.company-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.company-list .company + .company {
+  margin-left: 30px;
+}
+
+.company-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-company {
+  fill: currentColor;
+}
+
+.link-company {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-accent-color);
+}
+
+.link-company:hover {
+  border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 /* Footer */
@@ -431,6 +510,38 @@ img {
 }
 
 .footer-box {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-left: 70px;
+  padding-top: 20px;
+}
+
+/* Footer Links */
+
+.svg-item-footer {
+  display: flex;
+  padding: 0;
+  color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-item-footer:hover {
+  background-color: #2196f3;
 }
