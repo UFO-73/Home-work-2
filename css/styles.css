@@ -121,9 +121,7 @@ img {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--text-color);
-
   text-decoration: none;
   letter-spacing: 0.02em;
   font-weight: 500;
